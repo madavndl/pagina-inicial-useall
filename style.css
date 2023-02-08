@@ -14,10 +14,21 @@ main{
 
 main > #caixaroxa{
     position: absolute;
-    height: 40vh;
+    height: 55vh;
     width: 75%;
     background-color: #A99EE0;
-    margin-top: 17.5vh;
+    margin-top: 7.5vh;
+    left: 12.5%;
+}
+
+main > #caixabranca{
+    position: absolute;
+    height: 50vh;
+    width: 50%;
+    background-color: #ffffff;
+    margin-top: 16.5vh;
+    left: 37.5%;
+
 }
 
 #menu {
@@ -25,16 +36,16 @@ main > #caixaroxa{
 }
 
 nav{
-    
-    background-color: white;
     text-align: center;
     height: 10vh;
     padding-left: 30%;
+    
 }
 
 nav ul{
     display: inline-flex;
     list-style: none;
+    
 }
 
 nav ul li {
@@ -42,26 +53,35 @@ nav ul li {
     width: 136px;
     margin: 1px;
     padding: 8px;
-    background-color: rgb(219, 223, 223);
+    background-color: #f3f3f3;
     transition: background-color 0.5s ease;
 }
+
+.mudacor2 a{
+    color: rgb(7, 7, 7);
+}
+
+.mudacor a{
+    color: rgb(0, 0, 0);
+}
 .mudacor:hover{
-    background-color: black;
+    background-color: #3f3f3f;
 }
 
 .mudacor:hover a{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 nav ul li a {
-    /*/ transição de /*/
+    
     text-decoration: none;
-    color: black;
+    
 }
 
 nav ul li:hover .sub-menu-1{
     display: block;
     position: absolute;
+    
 }
 
 nav ul li:hover .sub-menu-1 ul{
@@ -69,15 +89,22 @@ nav ul li:hover .sub-menu-1 ul{
     position: absolute;
     margin-top: 8px;
     margin-left: -49px;
+    
+    
+    
 }
 
 .sub-menu-1{
     display: none;
+    background-color: #3f3f3f;
 }
+
+
 
 nav ul li:hover .sub-menu-2{
     display: block;
     position: absolute;
+    
 
 }
 
@@ -123,8 +150,19 @@ div#rodape {
 
 #sair{
     padding-left: 3%;
+    text-decoration: none;
+    color: #3f3f3f;
 }
 
 a{
     font-weight: bolder;
+    
 }
+
+/*/span{
+    color: black;
+}
+
+span:hover{
+    color:white;
+}/*/
