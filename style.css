@@ -1,18 +1,28 @@
+
+header{
+    max-width: 100%;
+    position: relative;
+}
+
 body {
-    
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /*/overflow: hidden;/*/
+    margin: 0;
+
 }
-main{
+
+main {
     /*/caixa cinza/*/
     background-color: #707070;
     height: 75vh;
+    width: 100%;
+   
 }
 
-main > #caixaroxa{
+main>#caixaroxa {
     position: absolute;
     height: 55vh;
     width: 75%;
@@ -21,31 +31,56 @@ main > #caixaroxa{
     left: 12.5%;
 }
 
-main > #caixabranca{
+#caixap {
+    width: 25%;
+    background-color: rgba(0, 255, 255, 0);
+    height: 30vh;
+    font-weight: bold;
+    position: absolute;
+    top: 19%;
+    text-align: center;
+    padding-left: 5%;
+    font-size: 100%;
+    text-align: justify;
+}
+
+main>#caixabranca {
     position: absolute;
     height: 50vh;
-    width: 50%;
-    background-color: #ffffff;
+    width: 53%;
+    background-color: #F3F3F3;
     margin-top: 16.5vh;
-    left: 37.5%;
+    left: 41.5%;
+}
 
+#caixabranca h1 {
+    text-align: center;
+    font-size: auto;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+#pcaixabranca {
+    position: relative;
+    text-align: center;
+    margin-bottom: 6%;
+    
 }
 
 #menu {
     box-sizing: border-box;
 }
 
-nav{
+nav {
+    margin-top: 1%;
     text-align: center;
     height: 10vh;
     padding-left: 30%;
-    
 }
 
-nav ul{
+nav ul {
     display: inline-flex;
     list-style: none;
-    
 }
 
 nav ul li {
@@ -54,115 +89,155 @@ nav ul li {
     margin: 1px;
     padding: 8px;
     background-color: #f3f3f3;
+    color: black;
     transition: background-color 0.5s ease;
 }
 
-.mudacor2 a{
-    color: rgb(7, 7, 7);
+.mudacor2 a {
+    color: black;
 }
 
-.mudacor a{
-    color: rgb(0, 0, 0);
+
+.mudacor2:hover::before a {
+    color: white;
 }
-.mudacor:hover{
+
+.mudacor {
+    color: black;
+}
+
+.mudacor a {
+    color: black;
+}
+
+.mudacor:hover {
     background-color: #3f3f3f;
 }
 
-.mudacor:hover a{
-    color: rgb(255, 255, 255);
+.mudacor:hover a {
+    color: white;
 }
+
 
 nav ul li a {
-    
     text-decoration: none;
-    
 }
 
-nav ul li:hover .sub-menu-1{
+nav ul li:hover .sub-menu-1 {
     display: block;
-    position: absolute;
-    
+    position: relative;
 }
 
-nav ul li:hover .sub-menu-1 ul{
+nav ul li:hover .sub-menu-1 ul {
     display: block;
     position: absolute;
     margin-top: 8px;
     margin-left: -49px;
-    
-    
-    
 }
 
-.sub-menu-1{
+.sub-menu-1 {
     display: none;
     background-color: #3f3f3f;
+    z-index: +3;
 }
 
-
-
-nav ul li:hover .sub-menu-2{
+nav ul li:hover .sub-menu-2 {
     display: block;
     position: absolute;
-    
-
+    z-index: +3;
 }
 
-nav ul li:hover .sub-menu-2 ul{
-    display: block;
-    position: absolute;
-    margin-top: 8px;
-    margin-left: -49px;
-}
-
-.sub-menu-2{
-    display: none;
-}
-
-nav ul li:hover .sub-menu-3{
-    display: block;
-    position: absolute;
-
-}
-
-nav ul li:hover .sub-menu-3 ul{
+nav ul li:hover .sub-menu-2 ul {
     display: block;
     position: absolute;
     margin-top: 8px;
     margin-left: -49px;
 }
 
-.sub-menu-3{
+.sub-menu-2 {
     display: none;
 }
 
-p{
-    text-align: center ;
-    display: inline-block;
+nav ul li:hover .sub-menu-3 {
+    display: block;
+    position: absolute;
+    z-index: +3;
 }
 
-div#rodape {
+nav ul li:hover .sub-menu-3 ul {
+    display: block;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: -49px;
+}
+
+.sub-menu-3 {
+    display: none;
+}
+
+#rodape {
     position: relative;
     height: 15vh;
     width: 100%;
 }
 
+#rodape img{
+    position: relative;
+    top: 12%;
+    left: 5%;
+}
 
-#sair{
+
+#rodape p {
+    position: relative;
+    left: 60%;
+    text-align: center;
+    display: inline-block;
+}
+
+#sair {
+    font-size: 15px;
     padding-left: 3%;
     text-decoration: none;
-    color: #3f3f3f;
-}
-
-a{
-    font-weight: bolder;
-    
-}
-
-/*/span{
     color: black;
 }
 
-span:hover{
-    color:white;
-}/*/
+a {
+    font-weight: bolder;
+}
+
+#image01 {
+    position: absolute;
+    left: 15%;
+    width: 5%;
+    height: 8%;
+}
+
+#bemvindo {
+    position: absolute;
+    left: 21.2%;
+    top: 2%;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.uc {
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.uc:hover {
+    color: #644FE0;
+}
+
+table {
+    padding-left: 3%;
+}
+
+th{
+    padding-bottom: 4%;
+}
